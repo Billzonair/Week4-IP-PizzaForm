@@ -18,5 +18,31 @@
                 Use the form below to place your order remotely <br> 
                 You can come pick it when it's ready or have it deliverd...</p>
         </div>
+
+        <form>
+
+            <div id="size">
+                <p>Please select your size (Note that prices may change according to size):</p>
+                    <input id="size-L" name="size" type="radio" value="Large">Large @ 1000<br>
+                    <input id="size-M" name="size" type="radio" value="Medium">Medium @ 800<br>
+                    <input id="size-S" name="size" type="radio" value="Small">Small @ 500
+            </div>
+
+            <div id="crust">
+                <p>Please select your crust (Note that prices may change according to crust):</p>
+                    <input id="crisp" name="crust" type="radio" value="Crisp">Crisp @ 100 <br>
+                    <input id="stuffed" name="crust" type="radio" value="Stuffed">Stuffed @ 150 <br>
+                    <input id="glutten-free" name="crust" type="radio" value="Glutten-free">Glutten-free @ 300
+            </div>
+
+            <div id="topping">
+                <p>Please select your topping (Note that prices may change according to topping):</p>
+                <input id="pepperoni" name="topping-pepepperoni" type="checkbox" value="pepperoni">Pepperoni
+                <input id="ham" name="topping-ham" type="checkbox" value="ham">Ham
+                <input id="chicken" name="topping-chicken" type="checkbox" value="chicken">Chicken
+                <input id="beef" name="topping-beef" type="checkbox" value="beef">Beef
+            </div>
+            <button onclick="Pizza">Calculate</button>
+        </form>
     </body>
 </html>
