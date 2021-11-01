@@ -1,27 +1,74 @@
 body{
     background-image: url(../img/Pizza1.jpg);
+    
 }
 #title{
     font-size: 35px;
     text-align: center;
     font-weight: bolder;
-    color:coral;
+    color: beige;
     font-family: fantasy;
 }
 #small{
-    color: cornsilk;
+    color:cornsilk;
     text-align: center;
     font-size: 17px;
+    background-color: gray;
 }
 #size{
     color: beige;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 400px;
+   
+
 
 }
 #crust{
     color: beige;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 6px;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 15px;
+    width: 400px;
+    
     
 }
 #topping{
     color: beige;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 6px;
+    font-size: 20px;
+    background-color: black;
+    width: 840px;
+    border-radius: 15px;
     
+}
+#container1{
+    display: flex;
+    column-count: 2;
+}
+#container2{
+    display: flex;
+    column-count: 2;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#container3{
+    display: flex;
+    column-count: 2;
+    font-size: 20px;
+}
+#pepproni{
+    margin-right: 200px;
+    margin-bottom: 15px;
+}
+#chicken{
+    margin-right: 200px;  
 }
