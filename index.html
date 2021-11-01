@@ -24,59 +24,62 @@
         <form id="selection" name="selection">
             <div id="container1">
 
-                <div id="size">
-                    <p>Please select your size:</p>
-                        <input id="size-L" name="size" type="radio" value="Large">Large @ 1000<br>
-                        <input id="size-M" name="size" type="radio" value="Medium">Medium @ 800<br>
-                        <input id="size-S" name="size" type="radio" value="Small">Small @ 500
-                </div>
+                <p class="size-crust">Please select your size:</p>
+                <select id="size">
+                        <option value="large">Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="small">small</option>
+                </select>
 
-                <div id="crust">
-                    <p>Please select your crust:</p>
-                        <input id="crisp" name="crust" type="radio" value="Crisp">Crisp @ 100 <br>
-                        <input id="stuffed" name="crust" type="radio" value="Stuffed">Stuffed @ 150 <br>
-                        <input id="glutten-free" name="crust" type="radio" value="Glutten-free">Glutten-free @ 300
-
-                </div>
+                <p class="size-crust">Please select your crust:</p>
+                <select id="crust">
+                        <option value="crispy">Crispy</option>
+                        <option value="stuffed">Stuffed</option>
+                        <option value="glutten-free">Glutten-free</option>
+                </select>
             </div>
             <div id="topping">
-                <p>Please select your topping:</p>
+                <p class="topping">Please select your topping:</p>
                 
                 <div id="container2">
 
-                <div id="pepproni">
-                <input id="pepproni-large" name="pepproni" type="radio" value="pepproni-large">Pepproni-large @ 200 <br>
-                <input id="pepproni-medium" name="pepproni" type="radio" value="pepproni-medium">Pepproni-medium @ 150 <br>
-                <input id="pepproni-small" name="pepproni" type="radio" value="pepproni-small">Pepproni-small @ 100
-                </div>
+                    <p class="topping">Please select your pepproni topping size:</p>
+                    <select id="pepproni">
+                            <option value="pepproni-large">Pepproni-Large</option>
+                            <option value="pepproni-medium">Pepproni-Medium</option>
+                            <option value="pepproni-small">Pepproni-small</option>
+                    </select>
 
-                <div id="ham">
-                <input id="ham-large" name="ham" type="radio" value="ham-large">Ham-large @ 300 <br>
-                <input id="ham-medium" name="ham" type="radio" value="ham-medium">Ham-medium @ 200 <br>
-                <input id="ham-small" name="ham" type="radio" value="ham-small">Ham-small @ 150
-                </div>
+                    <p class="topping">Please select your ham topping size:</p>
+                    <select id="ham">
+                            <option value="ham-large">Ham-Large</option>
+                            <option value="ham-medium">Ham-Medium</option>
+                            <option value="ham-small">Ham-small</option>
+                    </select>
 
                 </div>
 
                 <div id="container3">
 
-                <div id="chicken">
-                <input id="Chicken-large" name="Chicken" type="radio" value="Chicken-large">Chicken-large @ 200 <br>
-                <input id="Chicken-medium" name="Chicken" type="radio" value="Chicken-medium">Chicken-medium @ 150 <br>
-                <input id="Chicken-small" name="Chicken" type="radio" value="Chicken-small">Chicken-small @ 100
-                </div>
+                    <p class="topping">Please select your chicken topping size:</p>
+                    <select id="chicken">
+                            <option value="chicken-large">Chicken-Large</option>
+                            <option value="chicken-medium">Chicken-Medium</option>
+                            <option value="chicken-small">Chicken-small</option>
+                    </select>
 
-                <div id="beef">
-                <input id="beef-large" name="beef" type="radio" value="beef-large">Beef-large @ 200 <br>
-                <input id="beef-medium" name="beef" type="radio" value="beef-medium">Beef-medium @ 150 <br>
-                <input id="beef-small" name="beef" type="radio" value="beef-small">Beef-small @ 100
-                </div>
+                    <p class="topping">Please select your beef topping size:</p>
+                    <select id="beef">
+                            <option value="beef-large">Beef-Large</option>
+                            <option value="beef-medium">Beef-Medium</option>
+                            <option value="beef-small">Beef-small</option>
+                    </select>
                 
                 </div>
                 
             </div>
 
-            <button onclick="submit()">Submit</button>
+            <button onclick="getvalue()">Submit</button>
             
         </form>
         <ul id="Orders">

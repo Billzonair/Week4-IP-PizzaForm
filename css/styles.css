@@ -16,38 +16,47 @@ body{
     background-color: gray;
 }
 #size{
-    color: beige;
+    color: red;
     border: 2px solid rgb(255, 255, 255);
     padding: 6px;
     font-size: 20px;
     font-weight: bold;
-    background-color: black;
+    background-color: white;
     border-radius: 15px;
     margin-right: 20px;
-    width: 400px;
+    width: 200px;
+    height: fit-content;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 4px
    
 
 
 }
 #crust{
-    color: beige;
+    color: red;
     border: 2px solid rgb(255, 255, 255);
     padding: 6px;
     font-size: 20px;
-    background-color: black;
+    background-color:white;
     border-radius: 15px;
-    width: 400px;
+    width: 200px;
+    height: fit-content;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 4px;
     
     
 }
 #topping{
-    color: beige;
+    color:red;
     border: 2px solid rgb(255, 255, 255);
     padding: 6px;
     font-size: 20px;
-    background-color: black;
-    width: 840px;
+    background-color:white;
+    width: 800px;
     border-radius: 15px;
+    background-image: url(../img/topping.jpeg);
     
 }
 #container1{
@@ -71,4 +80,13 @@ body{
 }
 #chicken{
     margin-right: 200px;  
+}
+p.size-crust{
+    background-color: white;
+    font-size: 20px;
+}
+p.topping{
+    color: black;
+    background-color: rgb(133, 163, 1);
+    width: fit-content;
 }
