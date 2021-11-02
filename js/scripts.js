@@ -4,6 +4,9 @@ function Pizza(size, crust,  topping) {
     this.topping = topping;
 }
 
+Pizza.prototype.fullOrder = function() {
+  return this.size + " " + this.crust; + " " + this.topping;
+
 
 function getvalue(){
     var InputtedSize = document.getElementById("size").value;
