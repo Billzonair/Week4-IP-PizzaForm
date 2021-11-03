@@ -7,40 +7,64 @@ function Pizza(size, crust, pepproni, ham, chicken, beef) {
     this.beef = beef;
 }
 
+
 Pizza.prototype.fullOrder = function() {
-  return this.size + " " + this.crust;
-}
+  var size , crust, pepproni, ham, chicken, beef;
+    size = parseInt(this.size.val());
+    crust = parseInt(this.crust.val());
+    pepproni = parseInt(this.pepproni.val());
+    ham = parseInt(this.ham.val());
+    chicken = parseInt(this.chicken.val());
+    beef = parseInt(this.beef.val());
+    var order = (size, crust, pepproni, ham, chicken, beef)
+    return order
+};
+
 
 $(document).ready(function(){
   $("form#selection").submit(function(event) {
-    event.preventDefault();
+     var size, crust, pepproni, ham, chicken, beef;
+     size = $("#size: selected");
+     crust = $("#crust: selected");
+     pepproni = $("#pepproni: selected");
+     ham = $("#ham: selected");
+     chicken = $("#chicken: selected");
+     beef = $("#beef: selected");
+     
+     var PizzaOrder = new PizzaOrder(size, crust, pepproni, ham, chicken, beef);
+       addCart(PizzaOrder);
+       event.preventDefault(); 
   
 
-    let InputtedSize = $(".name option:selected").val();
-
-    var InputtedCrust = document.getElementById("crust").value;
-    console.log(InputtedCrust);
-
-    var InputtedPepproni = document.getElementById("pepproni").value;
-    console.log(InputtedPepproni);
-
-    var InputtedHam = document.getElementById("ham").value;
-    console.log(InputtedHam);
-
-    var InputtedChicken = document.getElementById("chicken").value;
-    console.log(InputtedChicken);
-
-    var InputtedBeef = document.getElementById("beef").value;
-    console.log(InputtedBeef);
     
-    var newOrder = new Pizza(InputtedSize, InputtedCrust, InputtedPepproni, InputtedHam, InputtedChicken, InputtedBeef);
-
-    $("ul#Orders").append("<li><span class='order'>" + newOrder. +  "</span></li>");
-    
-
   })
-})
+});
 
+
+    function addCart(order){
+      var size = order.size
+        .map(function(){
+          return this.id
+        })
+        .get()
+        .join();
+        
+        $("#cart tbody").append(
+        `<tr>
+          <td>${order.size.html()}</td>
+          <td>${order.crust.html()}</td>
+          <td>${order.pepproni.html()}</td>
+          <td>${order.ham.html()}</td>
+          <td>${order.chicken.html()}</td>
+          <td>${order.beef.html()}</td>
+        </tr>`);
+      
+          };
+    
+    
+    
+
+ 
     
 
 

@@ -21,77 +21,108 @@
                 You can come pick it when it's ready or have it deliverd...</p>
         </div>
 
-        <form id="selection" name="selection">
+        <form id="selection" >
             <div id="container1">
 
-                <p class="size-crust">Please select your size:</p>
-                <select id="size">
-                        <option value="" selected disabled>Select a size</option>
-                        <option value="large">Large @ ksh 1200</option>
-                        <option value="medium">Medium @ ksh 800</option>
-                        <option value="small">small @ ksh 500</option>
-                </select>
-
-                <p class="size-crust">Please select your crust:</p>
-                <select id="crust">
-                        <option value="" selected disabled>Select a crust</option>
-                        <option value="crispy">Crispy @ ksh 100</option>
-                        <option value="stuffed">Stuffed @ ksh 200</option>
-                        <option value="glutten-free">Glutten-free @ 300</option>
-                </select>
+                <div class="form-group row align-items-center">
+                    <label class="col-sm-3 col-form-label" for="pizzaSize">Choose Size</label>
+                    <select id="pizzaSize" class="form-control col-sm-9">
+                        <option value="500">Small @500/=</option>
+                        <option value="850">Medium @850/=</option>
+                        <option value="1300">Large @1,300/=</option>
+                    </select>
+                </div>
+    
+               
+                <div class="form-group row align-items-center">
+                    <label class="col-sm-3 col-form-label" for="pizzaCrust">Choose Crust</label>
+                    <select id="pizzaCrust" class="form-control col-sm-9">
+                        <option value="100">Crispy @ ksh 100</option>
+                        <option value="200">Stuffed @ ksh 200</option>
+                        <option value="300">Glutten-free @ ksh 300</option>
+                    </select>
+                </div>
+                
             </div>
             <div id="topping">
                 <p class="topping">Please select your topping:</p>
                 
                 <div id="container2">
 
-                    <p class="topping">Please select your pepproni topping size:</p>
-                    <select id="pepproni">
-                            <option value="" selected disabled>Select a pepproni topping size</option>
-                            <option value="pepproni-large">Pepproni-Large @ ksh 300</option>
-                            <option value="pepproni-medium">Pepproni-Medium @ ksh 200</option>
-                            <option value="pepproni-small">Pepproni-small @ ksh 100</option>
-                    </select>
-
-                    <p class="topping">Please select your ham topping size:</p>
-                    <select id="ham">
-                        <option value="" selected disabled>Select a ham topping size</option>
-                            <option value="ham-large">Ham-Large @ ksh 300</option>
-                            <option value="ham-medium">Ham-Medium @ ksh 200</option>
-                            <option value="ham-small">Ham-small @ ksh 100</option>
-                    </select>
+                    <div class="form-group row align-items-center">
+                        <label class="col-sum-3 col-form-label" for="pizzaPepproni">Choose Pepproni</label>
+                        <select id="pizzaPepproni" class="form-control col-sm-9">
+                            <option value="300">Pepproni Large @ ksh 300</option>
+                            <option value="200">Pepproni Medium @ ksh 200</option>
+                            <option value="100">Pepproni Small @ ksh 100</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group row align-items-center">
+                        <label class="col-sum-3 col-form-label" for="pizzaHam">Choose Ham</label>
+                        <select id="pizzaHam" class="form-control col-sm-9">
+                            <option value="300">Ham Large @ ksh 300</option>
+                            <option value="200">Ham Medium @ ksh 200</option>
+                            <option value="100">Ham Small @ ksh 100</option>
+                        </select>
+                    </div>
 
                 </div>
 
                 <div id="container3">
 
-                    <p class="topping">Please select your chicken topping size:</p>
-                    <select id="chicken">
-                            <option value="" selected disabled>Select a chicken topping size</option>
-                            <option value="chicken-large">Chicken-Large @ ksh 250</option>
-                            <option value="chicken-medium">Chicken-Medium @ ksh 200</option>
-                            <option value="chicken-small">Chicken-small @ ksh 100</option>
-                    </select>
-
-                    <p class="topping">Please select your beef topping size:</p>
-                    <select id="beef">
-                            <option value="" selected disabled>Select a beef topping size</option>
-                            <option value="beef-large">Beef-Large @ ksh 200</option>
-                            <option value="beef-medium">Beef-Medium @ ksh 150</option>
-                            <option value="beef-small">Beef-small @ ksh 100</option>
-                    </select>
+                    <div class="form-group row align-items-center">
+                        <label class="col-sum-3 col-form-label" for="pizzaChicken">Choose Chicken</label>
+                        <select id="pizzaChicken" class="form-control col-sm-9">
+                            <option value="250">Chicken Large @ ksh 250</option>
+                            <option value="200">Chicken Medium @ ksh 200</option>
+                            <option value="100">Chicken Small @ ksh 100</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group row align-items-center">
+                        <label class="col-sum-3 col-form-label" for="pizzaBeef">Choose Beef</label>
+                        <select id="pizzaBeef" class="form-control col-sm-9">
+                            <option value="200">Beef Large @ ksh 200</option>
+                            <option value="150">Beef Medium @ ksh 150</option>
+                            <option value="100">Beef Small @ ksh 100</option>
+                        </select>
+                    </div>
                 
                 </div>
                 
             </div>
-
-            <button type="submit" class="btn">submit</button>
-            
+            <div class="form-group">
+            <button type="button" class="btn form-control" value="submit">submit</button>
+            </div>
         </form>
-        <div id="orders">
+        <div id="cart" >
+            <h5>Trolley</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Crust</th>
+                        <th>Pepproni</th>
+                        <th>Ham</th>
+                        <th>Chicken</th>
+                        <th>Beef</th>
+                    </tr>
+                </thead>
+            </table>
+            <hr/>
         <ul id="Orders">
 
         </ul>
+        </div>
+        
+        <div id="checkout">
+            <p>Select whether you wnat your Pizza delivered or You will come pick it up</p>
+            <select>
+                <option value="" selected disabled>Select If you want your order delivered or if you will pick it up</option>
+                <option id="delivered" value="deliverd">Delivered</option>
+                <option id="pick-up" value="pick-up">Pick-Up</option>
+            </select>
         </div>
 
 
