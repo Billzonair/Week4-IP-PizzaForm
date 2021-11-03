@@ -1,15 +1,16 @@
-function Pizza(size, crust, pepproni, ham, chicken, beef) {
+function Pizza(size, crust, pepproni, ham, chicken, beef, total) {
     this.size = size;
     this.crust = crust;
     this.pepproni = pepproni;
     this.ham = ham;
     this.chicken = chicken;
     this.beef = beef;
+    this.total = total
 }
 
 
 Pizza.prototype.fullOrder = function() {
-  var size , crust, pepproni, ham, chicken, beef;
+  var size , crust, pepproni, ham, chicken, beef, total;
     size = parseInt(this.size.val());
     crust = parseInt(this.crust.val());
     pepproni = parseInt(this.pepproni.val());

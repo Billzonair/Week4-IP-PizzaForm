@@ -1,65 +1,49 @@
 body{
-    background-image: url(../img/Pizza1.jpg);
-    
+    background-image: url(../img/Pizza4.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
 }
 #title{
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
     text-align: center;
-    font-weight: bolder;
-    color: beige;
-    font-family: fantasy;
 }
 #small{
-    color:cornsilk;
+    background-color: cyan;
     text-align: center;
-    font-size: 17px;
-    background-color: gray;
+    font-size: 15px;
+    color: black;
+    width: fit-content;
+    margin-left: 440px;
 }
-#size{
-    color: red;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 6px;
-    font-size: 20px;
+.form-group{
+    font-size: 28px;
     font-weight: bold;
-    background-color: white;
-    border-radius: 15px;
-    margin-right: 20px;
-    width:fit-content
-    height: fit-content;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 4px
-   
-
-
+    font-family: 'Times New Roman', Times, serif;   
 }
-#crust{
-    color: red;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 6px;
-    font-size: 20px;
-    background-color:white;
-    border-radius: 15px;
-    width: 200px;
-    height: fit-content;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 4px;
-    
-    
+#pizzaSize{
+    font-size: 28px;
 }
-#topping{
-    color:red;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 6px;
-    font-size: 20px;
-    width: 800px;
-    border-radius: 15px;
-    
+#pizzaCrust{
+    font-size: 28px;
+}
+#pizzaPepproni{
+    font-size: 28px;
+}
+#pizzaHam{
+    font-size: 28px;
+}
+#pizzaChicken{
+    font-size: 28px;
+}
+#pizzaBeef{
+    font-size: 28px;
 }
 #container1{
-    display: flex;
     column-count: 2;
+    margin-bottom: 25px;
 }
 #container2{
     display: flex;
@@ -71,38 +55,29 @@ body{
     display: flex;
     column-count: 2;
     font-size: 20px;
+}#container2{
+    display: flex;
+    column-count: 2;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
-#pepproni{
-    margin-right: 200px;
-    margin-bottom: 15px;
-    color: red;
-    font-weight: bold;
-}
-#chicken{
-    margin-right: 200px;  
-    color: red;
-font-weight: bold;
-}
-p.size-crust{
-    background-color: white;
+#container3{
+    display: flex;
+    column-count: 2;
     font-size: 20px;
 }
-p.topping{
-    color: black;
-    background-color: white;
-    width: fit-content;
-}
-#ham{
-    color: red;
-font-weight: bold;
-}
-#beef{
-    color: red;
-font-weight: bold;
-}
-#orders{
-    background-color: rgb(255, 255, 255);
-}
-#delivery{
-    background-color: white;
-}
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+  th {
+    background-color: #ee0909;
+    color: white;
+  }
+  th,
+  td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+  }
