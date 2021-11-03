@@ -26,6 +26,7 @@
 
                 <p class="size-crust">Please select your size:</p>
                 <select id="size">
+                        <option value="" selected disabled>Select a size</option>
                         <option value="large">Large @ ksh 1200</option>
                         <option value="medium">Medium @ ksh 800</option>
                         <option value="small">small @ ksh 500</option>
@@ -33,6 +34,7 @@
 
                 <p class="size-crust">Please select your crust:</p>
                 <select id="crust">
+                        <option value="" selected disabled>Select a crust</option>
                         <option value="crispy">Crispy @ ksh 100</option>
                         <option value="stuffed">Stuffed @ ksh 200</option>
                         <option value="glutten-free">Glutten-free @ 300</option>
@@ -45,6 +47,7 @@
 
                     <p class="topping">Please select your pepproni topping size:</p>
                     <select id="pepproni">
+                            <option value="" selected disabled>Select a pepproni topping size</option>
                             <option value="pepproni-large">Pepproni-Large @ ksh 300</option>
                             <option value="pepproni-medium">Pepproni-Medium @ ksh 200</option>
                             <option value="pepproni-small">Pepproni-small @ ksh 100</option>
@@ -52,6 +55,7 @@
 
                     <p class="topping">Please select your ham topping size:</p>
                     <select id="ham">
+                        <option value="" selected disabled>Select a ham topping size</option>
                             <option value="ham-large">Ham-Large @ ksh 300</option>
                             <option value="ham-medium">Ham-Medium @ ksh 200</option>
                             <option value="ham-small">Ham-small @ ksh 100</option>
@@ -63,6 +67,7 @@
 
                     <p class="topping">Please select your chicken topping size:</p>
                     <select id="chicken">
+                            <option value="" selected disabled>Select a chicken topping size</option>
                             <option value="chicken-large">Chicken-Large @ ksh 250</option>
                             <option value="chicken-medium">Chicken-Medium @ ksh 200</option>
                             <option value="chicken-small">Chicken-small @ ksh 100</option>
@@ -70,6 +75,7 @@
 
                     <p class="topping">Please select your beef topping size:</p>
                     <select id="beef">
+                            <option value="" selected disabled>Select a beef topping size</option>
                             <option value="beef-large">Beef-Large @ ksh 200</option>
                             <option value="beef-medium">Beef-Medium @ ksh 150</option>
                             <option value="beef-small">Beef-small @ ksh 100</option>
@@ -79,13 +85,14 @@
                 
             </div>
 
-            <button onclick="getvalue()">Submit</button>
+            <button type="submit" class="btn">submit</button>
             
         </form>
+        <div id="orders">
         <ul id="Orders">
 
         </ul>
-
+        </div>
 
 
     </body>

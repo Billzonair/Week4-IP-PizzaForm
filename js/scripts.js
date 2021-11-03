@@ -8,7 +8,7 @@ function Pizza(size, crust, pepproni, ham, chicken, beef) {
 }
 
 Pizza.prototype.fullOrder = function() {
-  return this.size + " " + this.crust; + " " + this.pepproni; + " " + this.ham + " " + this.chicken + " " + this.beef;
+  return this.size + " " + this.crust;
 }
 
 $(document).ready(function(){
@@ -16,8 +16,7 @@ $(document).ready(function(){
     event.preventDefault();
   
 
-    var InputtedSize = document.getElementById("size").value;
-    console.log(InputtedSize);
+    let InputtedSize = $(".name option:selected").val();
 
     var InputtedCrust = document.getElementById("crust").value;
     console.log(InputtedCrust);
@@ -33,6 +32,11 @@ $(document).ready(function(){
 
     var InputtedBeef = document.getElementById("beef").value;
     console.log(InputtedBeef);
+    
+    var newOrder = new Pizza(InputtedSize, InputtedCrust, InputtedPepproni, InputtedHam, InputtedChicken, InputtedBeef);
+
+    $("ul#Orders").append("<li><span class='order'>" + newOrder. +  "</span></li>");
+    
 
   })
 })
