@@ -1,7 +1,7 @@
 body{
-    background-image: url(../img/Pizza4.jpg);
+    background-image: url(../img/pizza5.jpg);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position:center;
 }
 #title{

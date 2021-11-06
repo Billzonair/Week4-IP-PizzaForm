@@ -1,3 +1,5 @@
+
+
 function Pizza(size, crust, pepproni, ham, chicken, beef, total) {
     this.size = size;
     this.crust = crust;
@@ -11,13 +13,13 @@ function Pizza(size, crust, pepproni, ham, chicken, beef, total) {
 
 Pizza.prototype.fullOrder = function() {
   var size , crust, pepproni, ham, chicken, beef, total;
-    size = parseInt(this.size.val());
-    crust = parseInt(this.crust.val());
-    pepproni = parseInt(this.pepproni.val());
-    ham = parseInt(this.ham.val());
-    chicken = parseInt(this.chicken.val());
-    beef = parseInt(this.beef.val());
-    var order = (size, crust, pepproni, ham, chicken, beef)
+    PizzaSize = parseInt(this.size.val());
+    Pizzacrust = parseInt(this.crust.val());
+    Pizzapepproni = parseInt(this.pepproni.val());
+    Pizzaham = parseInt(this.ham.val());
+    Pizzachicken = parseInt(this.chicken.val());
+    Pizzabeef = parseInt(this.beef.val());
+    var order = (size, crust, pepproni, ham, chicken, beef, total)
     return order
 };
 
@@ -58,6 +60,7 @@ $(document).ready(function(){
           <td>${order.ham.html()}</td>
           <td>${order.chicken.html()}</td>
           <td>${order.beef.html()}</td>
+          <td>${}
         </tr>`);
       
           };
