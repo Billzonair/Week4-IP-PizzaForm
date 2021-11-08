@@ -16,6 +16,9 @@ Pizza.prototype.myOrderDetails = function() {
 }
 
 $(document).ready(function() {
+
+  $('#orderAnotherButton').hide();
+
   $('#orderButton').click(function() {
     var sizeOfPizza = $('#pizzaSize option:selected').val();
     var crustOfPizza = $('#pizzaCrust option:selected').val();
@@ -26,15 +29,20 @@ $(document).ready(function() {
 
     var total = parseInt(sizeOfPizza) + parseInt(crustOfPizza) + parseInt(pepproniOfPizza) + parseInt(hamOfPizza) + parseInt(chickenOfPizza) + parseInt(beefOfPizza);
     var order = 1;
-    var grandTotal = 0;
+    var grandTotal = parseInt(0);
 
     $('#orderNo').html(order);
-    $('#Size').html(sizeOfPizza);
-    $('#Crust').html(crustOfPizza);
-    $('#Pepproni').html(pepproniOfPizza);
-    $('#Ham').html(hamOfPizza);
-    $('#Chicken').html(chickenOfPizza);
-    $('#Beef').html(beefOfPizza);
+    $('#Size').html($('#pizzaSize option:selected').text());
+    $('#Crust').html($('#pizzaCrust option:selected').text());
+    $('#Pepproni').html($('#pizzaPepproni option:selected').text());
+    $('#Ham').html($('#pizzaHam option:selected').text());
+    $('#Chicken').html($('#pizzaChicken option:selected').text());
+    $('#Beef').html($('#pizzaBeef option:selected').text());
     $('#Total').html(total);
+
+    $('#GrandTotal').html(grandTotal + total);
+
+    $('#orderAnotherButton').show();
+    $('#orderButton').hide();
   })
 });

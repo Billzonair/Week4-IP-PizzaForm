@@ -27,6 +27,7 @@
                 <div class="form-group row align-items-center">
                     <label class="col-sm-3 col-form-label" for="pizzaSize">Choose Size</label>
                     <select id="pizzaSize" class="form-control col-sm-9">
+                        <option value="0">--Please select your size--</option>
                         <option value="500">Small @500/=</option>
                         <option value="850">Medium @850/=</option>
                         <option value="1300">Large @1,300/=</option>
@@ -37,6 +38,7 @@
                 <div class="form-group row align-items-center">
                     <label class="col-sm-3 col-form-label" for="pizzaCrust">Choose Crust</label>
                     <select id="pizzaCrust" class="form-control col-sm-9">
+                        <option value="0">--Please select your crust--</option>
                         <option value="100">Crispy @ ksh 100</option>
                         <option value="200">Stuffed @ ksh 200</option>
                         <option value="300">Glutten-free @ ksh 300</option>
@@ -50,6 +52,7 @@
                     <div class="form-group row align-items-center">
                         <label class="col-sum-3 col-form-label" for="pizzaPepproni">Choose Pepproni</label>
                         <select id="pizzaPepproni" class="form-control col-sm-9">
+                            <option value="0">--Please select a pepproni size--</option>
                             <option value="300">Pepproni Large @ ksh 300</option>
                             <option value="200">Pepproni Medium @ ksh 200</option>
                             <option value="100">Pepproni Small @ ksh 100</option>
@@ -59,6 +62,7 @@
                     <div class="form-group row align-items-center">
                         <label class="col-sum-3 col-form-label" for="pizzaHam">Choose Ham</label>
                         <select id="pizzaHam" class="form-control col-sm-9">
+                            <option value="0">--Please select a ham size--</option>
                             <option value="300">Ham Large @ ksh 300</option>
                             <option value="200">Ham Medium @ ksh 200</option>
                             <option value="100">Ham Small @ ksh 100</option>
@@ -72,6 +76,7 @@
                     <div class="form-group row align-items-center">
                         <label class="col-sum-3 col-form-label" for="pizzaChicken">Choose Chicken</label>
                         <select id="pizzaChicken" class="form-control col-sm-9">
+                            <option value="0">--Please select a chicken size--</option>
                             <option value="250">Chicken Large @ ksh 250</option>
                             <option value="200">Chicken Medium @ ksh 200</option>
                             <option value="100">Chicken Small @ ksh 100</option>
@@ -81,6 +86,7 @@
                     <div class="form-group row align-items-center">
                         <label class="col-sum-3 col-form-label" for="pizzaBeef">Choose Beef</label>
                         <select id="pizzaBeef" class="form-control col-sm-9">
+                            <option value="0">--Please select a beef size--</option>
                             <option value="200">Beef Large @ ksh 200</option>
                             <option value="150">Beef Medium @ ksh 150</option>
                             <option value="100">Beef Small @ ksh 100</option>
@@ -92,10 +98,10 @@
             </div>
             <div class="form-group">
             <button id="orderButton" class="btn btn-sm btn-success">Submit Order</button>
+            <button id="orderAnotherButton" class="btn btn-sm btn-warning">Submit Another Order</button>
             </div>
         
         <div id="cart" >
-            <h5>Trolley</h5>
             <table>
                 <thead>
                     <tr>
@@ -108,13 +114,22 @@
                         <th>Beef</th>
                         <th>Total</th>
                     </tr>
-                    <p> <span id="orderNo"></span> <span id="Size"></span> <span id="Crust"></span> <span id="Pepproni"></span> <span id="Ham"></span> <span id="Chicken"></span> <span id="Beef"></span> <span id="Total"></span> </p>
+                    <tr> 
+                        <th><span id="orderNo"></span></th>
+                        <th><span id="Size"></span></th>
+                        <th> <span id="Crust"></span></th>
+                        <th> <span id="Pepproni"></span></th>
+                        <th> <span id="Ham"></span></th>
+                        <th> <span id="Chicken"></span></th>
+                        <th> <span id="Beef"></span></th>
+                        <th> <span id="Total"></span> </th> 
+                    </tr>
+                    <tr>
+                        <th>Grand Total : ksh <span id="GrandTotal"></span> </th>
+                    </tr>
                 </thead>
             </table>
             <hr/>
-        <ul id="Orders">
-
-        </ul>
         </div>
         
         <div id="checkout">
