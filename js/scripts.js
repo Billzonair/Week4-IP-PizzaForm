@@ -39,8 +39,8 @@ $(document).ready(function() {
     $('#Chicken').html($('#pizzaChicken option:selected').text());
     $('#Beef').html($('#pizzaBeef option:selected').text());
     $('#Total').html(total);
-
-    $('#GrandTotal').html(grandTotal + total);
+    grandTotal = grandTotal + total
+    $('#GrandTotal').html(grandTotal);
 
     $('#orderAnotherButton').show();
     $('#orderButton').hide();
@@ -58,9 +58,10 @@ $(document).ready(function() {
       grandTotal = grandTotal + total
 
       let newPizza = new Pizza(order, sizeOfPizza, crustOfPizza, pepproniOfPizza, hamOfPizza, chickenOfPizza, beefOfPizza, total);
-      let newPizzaOrder = "<tr><td>" + order + "</td><td>" + newPizza.size + "</td><td>" + newPizza.crust + "</td><td>" + newPizza.pepproni + "</td><td>" + newPizza.ham + "</td><td>" + newPizza.chicken + "</td><td>" + newPizza.beef + "</td><td>" + newPizza.total + "</td></tr>";
+      let newPizzaOrder = "<tr><td>" + order + "</td><td>" + $('#pizzaSize option:selected').text() + "</td><td>" + $('#pizzaCrust option:selected').text() + "</td><td>" + $('#pizzaPepproni option:selected').text() + "</td><td>" + $('#pizzaHam option:selected').text() + "</td><td>" + $('#pizzaChicken option:selected').text() + "</td><td>" + $('#pizzaBeef option:selected').text() + "</td><td>" + total + "</td></tr>";
 
       $('table tbody').append(newPizzaOrder);
+      $('#GrandTotal').html(grandTotal);
 
 
     })
