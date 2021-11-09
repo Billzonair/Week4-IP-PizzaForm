@@ -63,6 +63,10 @@ $(document).ready(function() {
       $('table tbody').append(newPizzaOrder);
       $('#GrandTotal').html(grandTotal);
 
+      $('button#checkoutButton').click(function(){
+        alert("your order has been placed the total is ksh" + " " + grandTotal +  " " + "please select in the next window if you want pick up or delivery")
+      })
+
 
     })
   })
