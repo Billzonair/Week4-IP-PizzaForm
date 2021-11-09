@@ -74,10 +74,16 @@ table {
     background-color: #ee0909;
     color: white;
   }
-  th,
+
   td {
     width: 150px;
     text-align: center;
     border: 1px solid black;
     padding: 2px;
+    background-color: white;
   }
+p#grandTotal{
+    color: white;
+    background-color: red;
+    width: fit-content;
+}

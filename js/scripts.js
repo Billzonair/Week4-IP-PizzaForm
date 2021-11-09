@@ -44,5 +44,25 @@ $(document).ready(function() {
 
     $('#orderAnotherButton').show();
     $('#orderButton').hide();
+
+    $('#orderAnotherButton').click(function(){
+      var sizeOfPizza = $('#pizzaSize option:selected').val();
+      var crustOfPizza = $('#pizzaCrust option:selected').val();
+      var pepproniOfPizza = $('#pizzaPepproni option:selected').val();
+      var hamOfPizza = $('#pizzaHam option:selected').val();
+      var chickenOfPizza = $('#pizzaChicken option:selected').val();
+      var beefOfPizza = $('#pizzaBeef option:selected').val();
+
+      var total = parseInt(sizeOfPizza) + parseInt(crustOfPizza) + parseInt(pepproniOfPizza) + parseInt(hamOfPizza) + parseInt(chickenOfPizza) + parseInt(beefOfPizza);
+      order = order + 1
+      grandTotal = grandTotal + total
+
+      let newPizza = new Pizza(order, sizeOfPizza, crustOfPizza, pepproniOfPizza, hamOfPizza, chickenOfPizza, beefOfPizza, total);
+      let newPizzaOrder = "<tr><td>" + order + "</td><td>" + newPizza.size + "</td><td>" + newPizza.crust + "</td><td>" + newPizza.pepproni + "</td><td>" + newPizza.ham + "</td><td>" + newPizza.chicken + "</td><td>" + newPizza.beef + "</td><td>" + newPizza.total + "</td></tr>";
+
+      $('table tbody').append(newPizzaOrder);
+
+
+    })
   })
 });
